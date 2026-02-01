@@ -1,0 +1,143 @@
+import { PartyTheme } from "@/types"
+
+export const predefinedThemes: PartyTheme[] = [
+  {
+    id: "superhero",
+    name: "Superhero Adventure",
+    description: "Capes, masks, and epic adventures for little heroes",
+    colors: ["#FF0000", "#0000FF", "#FFD700"],
+    icon: "🦸",
+  },
+  {
+    id: "princess",
+    name: "Royal Princess",
+    description: "A magical castle celebration with tiaras and tutus",
+    colors: ["#FF69B4", "#9370DB", "#FFD700"],
+    icon: "👑",
+  },
+  {
+    id: "dinosaur",
+    name: "Dino Expedition",
+    description: "Jurassic journey with T-Rex and fossil digs",
+    colors: ["#228B22", "#8B4513", "#DAA520"],
+    icon: "🦕",
+  },
+  {
+    id: "space",
+    name: "Space Explorer",
+    description: "Rocket to the stars with astronauts and aliens",
+    colors: ["#191970", "#4B0082", "#00BFFF"],
+    icon: "🚀",
+  },
+  {
+    id: "safari",
+    name: "Safari Adventure",
+    description: "Wild animals and jungle explorations",
+    colors: ["#DAA520", "#8B4513", "#228B22"],
+    icon: "🦁",
+  },
+  {
+    id: "ocean",
+    name: "Under the Sea",
+    description: "Mermaids, pirates, and underwater treasures",
+    colors: ["#00BFFF", "#1E90FF", "#20B2AA"],
+    icon: "🐙",
+  },
+  {
+    id: "pirate",
+    name: "Pirate Treasure",
+    description: "X marks the spot for swashbuckling fun",
+    colors: ["#000000", "#8B4513", "#FFD700"],
+    icon: "🏴‍☠️",
+  },
+  {
+    id: "unicorn",
+    name: "Unicorn Magic",
+    description: "Rainbows, sparkles, and magical creatures",
+    colors: ["#FF69B4", "#DA70D6", "#87CEEB"],
+    icon: "🦄",
+  },
+]
+
+export const interestCategories = [
+  "Animals",
+  "Space",
+  "Sports",
+  "Art",
+  "Music",
+  "Dancing",
+  "Reading",
+  "Video Games",
+  "Nature",
+  "Trains",
+  "Cars",
+  "Dinosaurs",
+  "Princesses",
+  "Superheroes",
+  "Magic",
+  "Cooking",
+  "Building",
+  "Pirates",
+  "Mermaids",
+  "Robots",
+]
+
+export const colorOptions = [
+  { name: "Red", value: "#FF0000" },
+  { name: "Orange", value: "#FFA500" },
+  { name: "Yellow", value: "#FFD700" },
+  { name: "Green", value: "#228B22" },
+  { name: "Blue", value: "#0000FF" },
+  { name: "Purple", value: "#9370DB" },
+  { name: "Pink", value: "#FF69B4" },
+  { name: "Black", value: "#000000" },
+]
+
+export const plans = [
+  {
+    id: "STARTER" as const,
+    name: "Starter",
+    price: 0,
+    description: "Perfect for planning your first party",
+    features: [
+      "1 party at a time",
+      "Up to 25 guests",
+      "Basic themes",
+      "Guest management",
+      "Timeline checklist",
+    ],
+    limits: { guests: 25, parties: 1 },
+  },
+  {
+    id: "PLUS" as const,
+    name: "Plus",
+    price: 19,
+    description: "Great for families who love celebrating",
+    features: [
+      "3 parties at a time",
+      "Up to 75 guests",
+      "AI theme recommendations",
+      "Budget tracking",
+      "Activity planner",
+      "Email invitations",
+    ],
+    limits: { guests: 75, parties: 3 },
+  },
+  {
+    id: "PRO" as const,
+    name: "Pro",
+    price: 49,
+    description: "For the ultimate party planner",
+    features: [
+      "Unlimited parties",
+      "Up to 200 guests",
+      "All AI features",
+      "Shopping suite",
+      "Food vendor finder",
+      "SMS + Email invites",
+      "RSVP analytics",
+      "Priority support",
+    ],
+    limits: { guests: 200, parties: -1 },
+  },
+]
