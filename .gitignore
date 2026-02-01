@@ -42,3 +42,4 @@ prisma/migrations/migration_lock.toml
 
 # Supabase
 .supabase/
+.vercel
